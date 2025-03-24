@@ -215,7 +215,7 @@ String page_0(){ // page HTML
 
   // bouton de la led en fonction de son état
   if(digitalRead(2)) bouton( "éteindre la led" ,"led","aaaaaa","24");
-  else               bouton( "alumer la led"   ,"led","aaaaaa","24");
+  else               bouton( "allumer la led"   ,"led","aaaaaa","24");
   br();   
   
   titre ("maison : " + String(w_maison) +" W | " + String(wh_maison/1000.0) +" KW/h","h2" , "#2222AA","#FFFFFF");
