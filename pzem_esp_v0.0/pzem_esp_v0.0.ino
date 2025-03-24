@@ -4,7 +4,7 @@
 #include <WiFi.h>       // gestion du wifi
 #include <NTPClient.h>  // pour hologe web
 #include <WiFiUdp.h>    // pour hologe web
-#include <PZEM004Tv30.h> // gestion des pzems
+#include <PZEM004Tv30.h> // gestion des pzems, https://github.com/mandulaj/PZEM-004T-v30
 #include <EEPROM.h>     // EEprom pour la sauvegarde des datas
 
 #define PZEM_RX 16 // Serial2 -> tx pzem vert
@@ -24,13 +24,9 @@ PZEM004Tv30 PZEM_maison;
 const char* ssid = "ssid";          // non du wifi
 const char* password = "password";  // mot de passe du wifi
 
-////PZEM004Tv30 pzem_solaire(14, 15);   // RX TX solaire
-//PZEM004Tv30 pzem_maison(16, 17);   // RX TX maison 
-
 WiFiServer server(80);  // canal wifi
 WiFiUDP ntpUDP;                               // hologe web
 NTPClient timeClient(ntpUDP, "pool.ntp.org"); // adresse de l'hologe web
-
 
 String p; // p contiendra le code HTML
 
@@ -169,7 +165,7 @@ void loop() {
       wh_maison = wh_solaire = wh_solaire_EDF = wh_EDF_maison = 0;
       
       m_jour = jour;
-      sychro_heure_web(); // recalle l'horloge interne avec l'heure du web
+      sychro_heure_web(); // init horloge interne avec l'heure du web
 
     }
   }
