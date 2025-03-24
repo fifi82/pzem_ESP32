@@ -21,8 +21,8 @@ PZEM004Tv30 PZEM_maison;
 // float w  = pzem[a].power() // watt
 // float pf = pzem.pf(); // cos phi
 
-const char* ssid = "Livebox-96B0";            // non du wifi
-const char* password = "xL942mjERc3p3JbQjj";  // mot de passe du wifi
+const char* ssid = "ssid";            // non du wifi
+const char* password = "password";  // mot de passe du wifi
 
 ////PZEM004Tv30 pzem_solaire(14, 15);   // RX TX solaire
 //PZEM004Tv30 pzem_maison(16, 17);   // RX TX maison 
