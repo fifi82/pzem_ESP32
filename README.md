@@ -13,19 +13,19 @@ les PZEM sont à configuré un à un pour changer leurs adresses, par défaut 0x
 
 Montage : 
 
-![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/cablage_pzem_esp32.png)
+![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/montage.JPG)
 
 
 Câblage : 
 
-![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/cablage_pzem_esp32.png)
+![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/cablage_pzem_esp32.png)
 
 
 page web : 
 
-![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/page_web.png)
+![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/page_web.png)
 
 
 ide arduino (ESP32-WROOM-DA Module): 
 
-![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/ide_arduino.png)
+![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/ide_arduino.png)
