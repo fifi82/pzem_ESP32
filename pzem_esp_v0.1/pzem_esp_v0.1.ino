@@ -132,8 +132,8 @@ void loop() {
 
     if (annee<2025) sychro_heure_web(); // si pas de synchro on recharge l'heure
     tension =   PZEM_maison.voltage(); // lecture de la tension électrique pour info
-    w_maison  = PZEM_maison.power() + 100;   // lecture des watts de la maison
-    w_solaire = PZEM_solaire.power() + 150;  // lecture des watts du solaire
+    w_maison  = PZEM_maison.power();   // lecture des watts de la maison
+    w_solaire = PZEM_solaire.power();  // lecture des watts du solaire
     
     wh_maison  += w_maison  / 3600.0; // calcule les wh de la maison
     wh_solaire += w_solaire / 3600.0; // calcule les wh produit par le solaire
