@@ -216,7 +216,7 @@ String page_0(){ // page HTML
   entete("ESP32 pzem wifi / Montaulab - fifi82 2025<br>" + date(), 5 ); // cré une nouvelle page qui se rafraichi toute les 5s 
   titre( "affichage des donnees", "h2" , "#33aa55", "#FFFFFF");
 
-  if(digitalRead(2)) t = "éteindre la led";  else t = "alumer la led"; // modifi le texte en fonctionde l'état de la led
+  if(digitalRead(2)) t = "éteindre la led";  else t = "allumer la led"; // modifi le texte en fonctionde l'état de la led
   bouton( t ,"led","aaaaaa","24"); br();   // affiche le bouton de la led
    
   titre ("maison : "+  String(w_maison) + " W | " + String(wh_maison/1000)  +" KW/h","h2" , "#2222AA","#FFFFFF");
