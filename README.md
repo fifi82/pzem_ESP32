@@ -10,6 +10,8 @@ Watts et KW/h solaire
 Watts et KW/h solaire => EDF
 Watts et KW/h EDF => Solaire
 
+un enregistrement est effectué tous les jour à minuit dans la EEprom de l'esp, 31 enregistrements.
+
 les PZEM sont à configuré un à un pour changer leurs adresses qui par défaut est 0x10, en 0x2 pour la maison et 0x3 pour le solaire
 
 Le montage : 
