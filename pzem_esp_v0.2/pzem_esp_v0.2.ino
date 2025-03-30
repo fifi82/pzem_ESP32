@@ -144,10 +144,15 @@ void loop() {
     pzem = false; // bit antirebond pour la lecture toutes les secondes
 
     if (annee<2025) sychro_heure_web(); // si pas de synchro on recharge l'heure avec le web
-    tension =   float( PZEM_maison.voltage() );  // lecture de la tension électrique pour info
-    w_maison  = float( PZEM_maison.power()  + offsert_m );  // lecture des watts de la maison
-    w_solaire = float( PZEM_solaire.power() + offsert_s );  // lecture des watts du solaire
-    
+    tension =   PZEM_maison.voltage();  // lecture de la tension électrique pour info
+    if (String(tension) == "nan") tension = 0;
+    delay(10);
+    w_maison  = PZEM_maison.power()  + offsert_m ;  // lecture des watts de la maison    
+    if (String(w_maison) == "nan") w_maison = 0;
+    delay(10);
+    w_solaire = PZEM_solaire.power() + offsert_s ;  // lecture des watts du solaire
+    if (String(w_solaire) == "nan") w_solaire = 0; 
+
     wh_maison  += w_maison  / 3600.0; // calcule les wh de la maison
     wh_solaire += w_solaire / 3600.0; // calcule les wh produit par le solaire
     float val = (w_maison - w_solaire) / 3600.0; // regarde si on prend ou on donne à EDF
