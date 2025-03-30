@@ -26,7 +26,7 @@ Le câblage :
 
 La page web, posibilité d'ajouter des boutons pour d'autres option : 
 
-![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/page_web-0.png)
+![alt text](https://github.com/fifi82/pzem_ESP32/blob/main/image/page_web.png)
 
 
 ide arduino (ESP32-WROOM-DA Module), la carte à choisir : 
