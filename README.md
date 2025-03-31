@@ -19,7 +19,7 @@ les PZEM sont à configuré un à un pour changer leurs adresses qui par défaut
 pzem_esp_v0.4.ino :<br>
 le nom du wifi et le mot de passe sont à configurer via le terminal ide arduino<br>
 ils seront stocké dans la EEprom<br>
-la vitesse est de 921600 bauds<br>
+la vitesse du terminal est de 921600 bauds<br>
 tapez 'reboot' pour reconnecter l'esp32<br>
 tapez 'nom wifi' pour afficher le nom du réseau wifi<br>
 tapez 'ssid nom_wifi mot_de_passe' pour se connecter à un réseau wifi<br>
