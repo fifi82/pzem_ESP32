@@ -15,7 +15,9 @@ un enregistrement est effectué tous les jour à minuit dans la EEprom de l'esp,
 
 les PZEM sont à configuré un à un pour changer leurs adresses qui par défaut est 0x10, en 0x2 pour la maison et 0x3 pour le solaire
 
+
 pzem_esp_v0.4.ino :
+
 le nom du wifi et le mot de passe sont à configurer via le terminal ide arduino
 la vitesse est de 921600 bauds
 tapez 'reboot' pour reconnecter l'esp32
